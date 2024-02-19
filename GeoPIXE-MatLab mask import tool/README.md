@@ -11,7 +11,7 @@ For example:
 
 Description of scripts:
 
-  + 'regionToGeoPIXE_v2.m' = script to convert a QuPath software mineral phase map 'region of interest' (ROI) into a GeoPIXE Q-vector file (readable as a region in GeoPIXE). 
+  + regionToGeoPIXE_v2.m = script to convert a QuPath software mineral phase map 'region of interest' (ROI) into a GeoPIXE Q-vector file (readable as a region in GeoPIXE). 
   +	backgroundColourInverter.m = whitens the optical phase map background considering the foreground mask
   + load_csvTableExport.m = normalises spectra and compares the different regions and spectra exported from GeoPIXE
   + figureGeoPIXE_v3.m = script for generating spectral figures for Synchrotron XFM (for comparison). It supports GeoPIXE spectral output conventions. The script allows reproducing the figure above (see paper).
@@ -19,4 +19,5 @@ Description of scripts:
 Authorship:
   + The MatLab implementation side (this folder) was done by Marco Acevedo (QUT).
   + The GeoPIXE implementation side to read 'region' files was done directly on IDL language by Dr. Chris Ryan (CSIRO).
-  + When using the code, please cite: "Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide Garralda, T., & Murphy, D. (under review). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. Chemical Geology."
+  + When using the code, please cite:
+    - "Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide Garralda, T., & Murphy, D. (under review). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. Chemical Geology."

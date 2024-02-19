@@ -23,6 +23,8 @@ To be able to run the scripts, you require installing:
   + Symbolic Math Toolbox, Version 9.3
   + Wavelet Toolbox, Version 6.3
 
+The script Python version was 3.7.12. The autoencoder script used numpy 1.21.6, scipy 1.7.3, h5py 3.6.0, matplotlib 3.2.2, pytorch 1.12.1, pillow 9.0.1, and tqdm 4.64.1.
+
 ## Future Updates
 
 We expect to increase the efficiency of Algorithm 2 and provide explanatory videos for new users who would like to learn to acquire their images (microscope stage rotation and capturing) and manage the files for effectively use POAM. Feel free to contact me for scientific collaboration.

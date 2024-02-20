@@ -27,7 +27,6 @@ The script Python version was 3.7.12. The autoencoder script used numpy 1.21.6, 
 
 ## Future Updates
 
-We expect to increase the efficiency of Algorithm 2 and provide explanatory videos for new users who would like to learn to acquire their images (microscope stage rotation and capturing) and manage the files for effectively use POAM. Feel free to contact me for scientific collaboration.
+We expect to increase the support for more file formats from different micro-analytical instruments. Also, file management is done manually and the scripts do not have a Graphical User Interface. 
 
-Thanks.
-:) 
+Feel free to contact if there still are issues after running the code with your own data. Thanks.

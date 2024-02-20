@@ -25,6 +25,10 @@ To be able to run the scripts, you require installing:
 
 The script Python version was 3.7.12. The autoencoder script used numpy 1.21.6, scipy 1.7.3, h5py 3.6.0, matplotlib 3.2.2, pytorch 1.12.1, pillow 9.0.1, and tqdm 4.64.1.
 
+## Video explaining the MatLab ROI Tool
+
+The region of interest (ROI) tool is explained in this [video](https://youtu.be/poPmVhwMwbA).
+
 ## Future Updates
 
 We expect to increase the support for more file formats from different micro-analytical instruments. Also, file management is done manually and the scripts do not have a Graphical User Interface. 

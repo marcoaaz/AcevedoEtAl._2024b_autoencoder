@@ -1,5 +1,13 @@
 # AcevedoEtAl._2024b_autoencoder
-This repository contains the original scripts to process the micro-analytical data presented in the Figures of the submitted m/s  'Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections.' to Chemical Geology.
+This repository contains the original scripts to process the micro-analytical data of rock thin sections. The full documentation of the code is in the submitted manuscript (Supplementary Material 1):
+
+**Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. (in revision). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. Chemical Geology.** 
+
+The main workflow combines the chemical images with optical microscopy images for enabling semantic segmentation using QuPath software. 
+  1. For registering the image montages we use the routine explained in this [video playlist](https://youtu.be/YpxTobsB-RM) (following [Bogovic et al., 2016](https://ieeexplore.ieee.org/document/7493463)).
+  2. The pixel-based segmentation is converted into a MatLab array using our previous [work](https://github.com/marcoaaz/Acevedo-Kamber/tree/main/QuPath_generatingMaps).
+
+<img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/595b94b7-9cf7-45ef-b63c-715586068d63" width=80% height=80%>
 
 To be able to run the scripts, you require installing:
 
@@ -27,10 +35,10 @@ The script Python version was 3.7.12. The autoencoder script used numpy 1.21.6, 
 
 ## Video explaining the MatLab ROI Tool
 
-The region of interest (ROI) tool is explained in this [video](https://youtu.be/poPmVhwMwbA).
+The region of interest (ROI) tool shown in the figure above (panel E) is explained in this brief [video](https://youtu.be/poPmVhwMwbA).
 
 ## Future Updates
 
 We expect to increase the support for more file formats from different micro-analytical instruments. Also, file management is done manually and the scripts do not have a Graphical User Interface. 
 
-Feel free to contact if there still are issues after running the code with your own data. Thanks.
+Feel free to contact Marco if there still are issues after running the code with your own data. Thanks.

@@ -1,5 +1,5 @@
 # AcevedoEtAl._2024b_autoencoder
-This repository contains the original scripts to process the micro-analytical data of rock thin sections. The full documentation of the code is in the submitted manuscript (Supplementary Material 1):
+This repository contains the original scripts to process the micro-analytical data of rock thin sections (available at [Zenodo](https://zenodo.org/records/10669251)). The full documentation of the code is in the submitted manuscript (Supplementary Material 1):
 
 **Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. (in revision). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. Chemical Geology.** 
 
@@ -36,6 +36,10 @@ The script Python version was 3.7.12. The autoencoder script used numpy 1.21.6, 
 ## Video explaining the MatLab ROI Tool
 
 The region of interest (ROI) tool shown in the figure above (panel E) is explained in this brief [video](https://youtu.be/poPmVhwMwbA).
+
+## Unit conversion
+
+Interested readers can convert the Synchrotron XFM maps provided in the data repository (available at [Zenodo](https://zenodo.org/records/10669251)) to ppm using the expression 10,000*(image pixels)/(mean density (g/cm3) *thickness (µm)).
 
 ## Future Updates
 

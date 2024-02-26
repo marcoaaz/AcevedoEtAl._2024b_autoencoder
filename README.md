@@ -1,7 +1,7 @@
 # AcevedoEtAl._2024b_autoencoder
 This repository contains the original scripts to process the micro-analytical data of rock thin sections (available at [Zenodo](https://zenodo.org/records/10669251)). The full documentation of the code is in the submitted manuscript (Supplementary Material 1):
 
-**Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. (in revision). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. Chemical Geology.** 
+**Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. T. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. Chemical Geology, 121997. https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997** 
 
 The main workflow combines the chemical images with optical microscopy images for enabling semantic segmentation using QuPath software. 
   1. For registering the image montages we use the routine explained in this [video playlist](https://youtu.be/YpxTobsB-RM) (following [Bogovic et al., 2016](https://ieeexplore.ieee.org/document/7493463)).

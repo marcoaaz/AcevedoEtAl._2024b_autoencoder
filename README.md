@@ -11,7 +11,7 @@ The main workflow combines the chemical images with optical microscopy images fo
   1. For registering the image montages we use the routine explained in this [video playlist](https://youtu.be/YpxTobsB-RM) (following [Bogovic et al., 2016](https://ieeexplore.ieee.org/document/7493463)).
   2. The pixel-based segmentation is converted into a MatLab array using our previous [work](https://github.com/marcoaaz/Acevedo-Kamber/tree/main/QuPath_generatingMaps).
 
-<img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/595b94b7-9cf7-45ef-b63c-715586068d63" width=70% height=70%>
+<img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/595b94b7-9cf7-45ef-b63c-715586068d63" width=60% height=60%>
 
 To be able to run the scripts, you require installing:
 

@@ -1,13 +1,17 @@
 # AcevedoEtAl._2024b_autoencoder
 This repository contains the original scripts to process the micro-analytical data of rock thin sections (available at [Zenodo](https://zenodo.org/records/10669251)). The full documentation of the code is in the submitted manuscript (Supplementary Material 1):
 
-**Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. T. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. Chemical Geology, 121997. https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997** 
+**Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. T. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. ***Chemical Geology***, 121997. https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997** 
+
+If using the original dataset, please, also cite:
+
+**Acevedo Zamora, M. A. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections: original datasets. In Chemical Geology (version 1). ***Zenodo***. https://doi.org/10.5281/zenodo.10669251**
 
 The main workflow combines the chemical images with optical microscopy images for enabling semantic segmentation using QuPath software. 
   1. For registering the image montages we use the routine explained in this [video playlist](https://youtu.be/YpxTobsB-RM) (following [Bogovic et al., 2016](https://ieeexplore.ieee.org/document/7493463)).
   2. The pixel-based segmentation is converted into a MatLab array using our previous [work](https://github.com/marcoaaz/Acevedo-Kamber/tree/main/QuPath_generatingMaps).
 
-<img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/595b94b7-9cf7-45ef-b63c-715586068d63" width=80% height=80%>
+<img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/595b94b7-9cf7-45ef-b63c-715586068d63" width=70% height=70%>
 
 To be able to run the scripts, you require installing:
 
@@ -39,7 +43,7 @@ The region of interest (ROI) tool shown in the figure above (panel E) is explain
 
 ## Unit conversion
 
-Interested readers can convert the Synchrotron XFM maps provided in the data repository (available at [Zenodo](https://zenodo.org/records/10669251)) to ppm using the expression 10,000*(image pixels)/(mean density (g/cm3) *thickness (µm)).
+Interested readers can convert the Synchrotron XFM maps provided in the data repository (available at [Zenodo](https://zenodo.org/records/10669251)) to ppm using the expression 10,000*(image pixels)/(mean density (g/cm<sup>3</sup>) *thickness (µm)).
 
 ## Future Updates
 

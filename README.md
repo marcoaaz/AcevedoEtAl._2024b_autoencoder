@@ -7,6 +7,12 @@ If using the original dataset, please, also cite:
 
 **Acevedo Zamora, M. A. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections: original datasets. In Chemical Geology (version 1). ***Zenodo***. https://doi.org/10.5281/zenodo.10669251**
 
+The optical images that were combined with chemical element maps for the pixel-based segmentation are in the [virtual microscope]() and can be accessed using (user ; password): QUTguest_paper3 ; vs200_paper3
+
+<img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/c106927a-3323-4899-8abd-0c5655166976" width=80% height=80%>
+
+## Workflow
+
 The main workflow combines the chemical images with optical microscopy images for enabling semantic segmentation using QuPath software. 
   1. For registering the image montages we use the routine explained in this [video playlist](https://youtu.be/YpxTobsB-RM) (following [Bogovic et al., 2016](https://ieeexplore.ieee.org/document/7493463)).
   2. The pixel-based segmentation is converted into a MatLab array using our previous [work](https://github.com/marcoaaz/Acevedo-Kamber/tree/main/QuPath_generatingMaps).

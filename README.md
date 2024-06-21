@@ -1,6 +1,11 @@
 # AcevedoEtAl._2024b_autoencoder
 
-The repository contains the original scripts of [Acevedo Zamora et al. (2024)](https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997) to do image analysis of micro-analytical data of rock thin sections (see Zenodo [repository](https://zenodo.org/records/10669251)). The full explanation and part of the documentation can be found in Supplementary Material 1 of:
+The repository contains the original scripts of [Acevedo Zamora et al. (2024)](https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997) to do image analysis of micro-analytical data of rock thin sections (see Zenodo [repository](https://zenodo.org/records/10669251)). For example, in this oceanic gabbro (Figure 9):
+
+<img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/a116201f-b2eb-44d9-a826-236ead59b04e" width=100% height=100%>
+
+
+The full image analysis code explanation and part of the documentation can be found in the Supplementary Material 1 at:
 
 **Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. T. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. ***Chemical Geology***, 121997. https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997** 
 
@@ -54,7 +59,7 @@ Interested readers can convert the Synchrotron XFM maps provided in the data rep
 
 ## Update (21-Jun-2024)
 
-In the paper we mentioned that the image analysis approach for tracking and segmentation were 'scalable'. Therefore, we have updated the original scripts for enabling whole-slide imaging using image pyramids (multi-gigapixel chemical image stacks). This was enabled using [pyvips library](https://github.com/libvips/pyvips) and translating the code from MatLab to Python. The results should be stored in a folder output that looks like this:
+In the paper we mentioned that the image analysis approach for tracking and segmentation were 'scalable'. Therefore, we have updated the original scripts to support working with whole-slide imaging using image pyramids (multi-gigapixel chemical image stacks). This was possible using the powerful [pyvips library](https://github.com/libvips/pyvips) and translating the code from MatLab to Python. The results should be stored in a folder output that looks like this:
 
 <img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/9ce0321a-7e41-44a9-92c3-55dd8fd97097" width=90% height=90%>
 
@@ -78,7 +83,7 @@ In the code, if there is any missing function dependency that I have not uploade
 
 ## Future Updates
 
-File management is done manually and the scripts do not have a Graphical User Interface. We expect interested users to fork our code into something bigger and more dedicated for petrology in other techniques (e.g., XMapTools). Also, we expect to increase the support for more file formats from different micro-analytical instruments.
+File management is done manually and the scripts do not have a Graphical User Interface. We expect interested users to fork our code into other software that is already adapted to perform petrological analysis (e.g., [XMapTools](https://github.com/xmaptools)). Also, we expect to increase the support for more file formats from different micro-analytical instruments.
 
 Particularly after the last update, I expect continue making improvements in performance and parallelising the approach. 
 

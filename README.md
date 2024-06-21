@@ -67,7 +67,7 @@ The process follows:
   1. To begin, the user can find the 'DSA autoencoder>tilingAndStacking_v4.py' script for producing the 1-level pyramid (at full resolution).
      + The script produces the folders 'linear_pyramid_files', 'log_pyramid_files', and 'original_pyramid_files' in a new directory.
      + It also saves the recoloured images (of each element, of each experiment) in the same new directory (for visual expert observation).
-  3. Then, they can use 'wsi_dimPCA_v2.m' to produce the PCA image (of the whole-slide) and shorten the desired element list (to elements of interest or with visible patterns).
+  3. Then, they can use 'wsi_dimPCA_v2.m' to produce the PCA image (of the whole-slide) and shorten the desired element list to elements of interest (with visible patterns). The implementation uses an [external package](https://au.mathworks.com/matlabcentral/fileexchange/88872-incrementalpca) for MatLab.
      + The script produces a folder called 'pca_results' that contains the image and processed metadata (montage_pcaInfo.mat) for each trial run.
   4. Next, they need to use 'DSA_images_training_v3.py' to train the autoencoder model (*.tar) that will produce the DSA image. The directories need to be changed manually to interpret the element list pre-selected in step (2).
      + The script produces a folder called 'dsa_results' that contains the pytorch model and processed metadata (sessionVariables.pckl) for each trial run.

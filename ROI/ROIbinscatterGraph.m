@@ -5,6 +5,7 @@ function ROIbinscatterGraph(roiHandle, dataLabels, minerals, choices, x1, x2, pc
 roiDataXYZ = roiHandle.UserData.roiDataXYZ;
 roiMineralMask = roiHandle.UserData.roiMineralMask;
 pixelPopulations = roiHandle.UserData.pixelPopulations;
+n_pixels = sum(pixelPopulations); %within ROI
 
 dn1 = strcmp(dataLabels, x1); %look up for specific columns
 dn2 = strcmp(dataLabels, x2); 
@@ -116,7 +117,7 @@ for i = choices
         'interpreter', 'none');   
 end
 hold off
-t = sgtitle('Binscatter plots (bin counts)');
+t = sgtitle(sprintf('Binscatter plots (ROI = %.f px)', n_pixels));
 t.FontSize = fontSize;
 
 end

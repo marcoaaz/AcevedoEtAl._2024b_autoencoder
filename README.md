@@ -47,7 +47,7 @@ To be able to run the scripts, you require installing:
   + Symbolic Math Toolbox, Version 9.3
   + Wavelet Toolbox, Version 6.3
 
-The script Python version was 3.7.12. The autoencoder script used numpy 1.21.6, scipy 1.7.3, h5py 3.6.0, matplotlib 3.2.2, pytorch 1.12.1, pillow 9.0.1, and tqdm 4.64.1.
+Meanwhile, the Python script uses Python version 3.7.12. The autoencoder script used numpy 1.21.6, scipy 1.7.3, h5py 3.6.0, matplotlib 3.2.2, pytorch 1.12.1, pillow 9.0.1, and tqdm 4.64.1. An install of pyvips is required to enable whole-slide imaging.
 
 ## Video explaining the MatLab ROI Tool
 
@@ -73,13 +73,13 @@ The process follows:
      + The script produces a folder called 'dsa_results' that contains the pytorch model and processed metadata (sessionVariables.pckl) for each trial run.
   5. After, they must use 'DSA_images_predicting_v4.py' to build the DSA image (of the whole-slide) loading the autoencoder model trained in (3).
      + The script saves the image in 'dsa_results' for each trial run.
-  6. Finally, they can (optional) use the new ROI Tool that allows navigating chemical image stacks (of the whole-slide) with interactive plots that load the quantitative data (float numbers) from the 'original_pyramid_files' folder.
+  6. Finally, they can (optional) use the new ROI Tool ('ROIimageAnalysis_v7_wsi.m') that allows navigating chemical image stacks (of the whole-slide) with interactive plots that load the quantitative data (float numbers) from the 'original_pyramid_files' folder.
 
 With the update, there is no limit to how big the input images (geochemical maps) are for producing representation (DSA or PCA images) or deploying the ROI Tool (in MatLab):
 
 <img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/e1cf0558-6c83-4bc8-9fca-7544a8cdd075" width=100% height=100%>
 
-In the code, if there is any missing function dependency that I have not uploaded, please, let me know. I recommend using Visual Studio Code rather than Anaconda-Spyder as an IDE.
+If there is any missing function dependency that I have not uploaded, please, let me know. For smooth dependencies installation, I recommend using Visual Studio Code (and 'pip') rather than Anaconda-Spyder (and 'conda install') as an IDE.
 
 ## Future Updates
 

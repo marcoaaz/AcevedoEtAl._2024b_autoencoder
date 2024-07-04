@@ -1,6 +1,6 @@
 # AcevedoEtAl._2024b_autoencoder
 
-The repository contains the original scripts of [Acevedo Zamora et al. (2024)](https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997) to do image analysis of micro-analytical data of rock thin sections (see Zenodo [repository](https://zenodo.org/records/10669251)). For example, in this oceanic gabbro (Figure 9):
+The repository contains original image analysis scripts presented in [Acevedo Zamora et al. (2024)](https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997) to do of micro-analytical data of rock thin-sections (see Zenodo [repository](https://zenodo.org/records/10669251)). For example, in this oceanic gabbro (Figure 9):
 
 <img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/a116201f-b2eb-44d9-a826-236ead59b04e" width=100% height=100%>
 
@@ -85,9 +85,9 @@ If there is any missing function dependency that I have not uploaded, please, le
 
 File management is done manually and the scripts do not have a Graphical User Interface. We expect interested users to fork our code into other software that is already adapted to perform petrological analysis (e.g., [XMapTools](https://github.com/xmaptools)). Also, we expect to increase the support for more file formats from different micro-analytical instruments.
 
-Particularly after the last update, I expect continue making improvements in performance and parallelising the approach. 
+Particularly after the last update, I expect to continue making improvements in performance and parallelising the approach. 
 
-Plase, feel free to contact us if there still are issues after running the code with your own data. 
+Please, feel free to contact us if there still are issues after running the code with your own data and getting familiar with the workflow. 
 
-Thank you very much. Cordially,
+Thanks. Cordially,
 Marco AAZ.

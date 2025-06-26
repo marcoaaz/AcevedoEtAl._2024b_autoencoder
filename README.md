@@ -5,7 +5,7 @@ This repository contains original image analysis scripts presented in [Acevedo Z
 <img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/a116201f-b2eb-44d9-a826-236ead59b04e" width=100% height=100%>
 
 
-Besides the commented code, the steps explanation can be found in the Supplementary Material 1 at:
+The scripts are commented and a broad explanation of the workflow steps (see below) can be found in Supplementary Material 1:
 
 **Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. T. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. ***Chemical Geology***, 121997. https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997** 
 

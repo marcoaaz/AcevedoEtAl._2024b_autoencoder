@@ -19,7 +19,7 @@ The optical scans stacked with chemical element maps are in the [virtual microsc
 
 ## Workflow
 
-The main workflow combines the chemical images with optical microscopy images for enabling pixel classification (semantic segmentation) using QuPath software [Bankhead et al., 2017](https://pubmed.ncbi.nlm.nih.gov/29203879/). 
+The main workflow combines the chemical images with optical microscopy images for enabling pixel classification (semantic segmentation) using QuPath software ([Bankhead et al., 2017](https://pubmed.ncbi.nlm.nih.gov/29203879/)). 
   1. For registering the image montages we use the routine explained in this [video playlist](https://youtu.be/YpxTobsB-RM) (following [Bogovic et al., 2016](https://ieeexplore.ieee.org/document/7493463)).
   2. The pixel-based segmentation is converted into a MatLab array using our previous [work](https://github.com/marcoaaz/Acevedo-Kamber/tree/main/QuPath_generatingMaps).
 

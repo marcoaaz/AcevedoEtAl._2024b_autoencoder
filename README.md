@@ -1,25 +1,25 @@
 # AcevedoEtAl._2024b_autoencoder
 
-The repository contains original image analysis scripts presented in [Acevedo Zamora et al. (2024)](https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997) to do of micro-analytical data of rock thin-sections (see Zenodo [repository](https://zenodo.org/records/10669251)). For example, in this oceanic gabbro (Figure 9):
+This repository contains original image analysis scripts presented in [Acevedo Zamora et al. (2024)](https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997) to study optical microscopy and micro-analytical maps of rock thin-sections (see Zenodo [repository](https://zenodo.org/records/10669251)). For example, on this oceanic gabbro (Figure 9):
 
 <img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/a116201f-b2eb-44d9-a826-236ead59b04e" width=100% height=100%>
 
 
-The full image analysis code explanation and part of the documentation can be found in the Supplementary Material 1 at:
+Besides the commented code, the steps explanation can be found in the Supplementary Material 1 at:
 
 **Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. T. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. ***Chemical Geology***, 121997. https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997** 
 
-When using the original dataset for trialling the code, please cite:
+For the original dataset (for trialling the code), please, cite:
 
 **Acevedo Zamora, M. A. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections: original datasets. In Chemical Geology (version 1). ***Zenodo***. https://doi.org/10.5281/zenodo.10669251**
 
-The optical images that were combined with chemical element maps for the pixel-based segmentation are in the [virtual microscope](https://qutrocks.qut.edu.au/) and can be accessed using (user ; password): QUTguest_paper3 ; vs200_paper3
+The optical scans stacked with chemical element maps are in the [virtual microscope](https://qutrocks.qut.edu.au/) and can be accessed using (user ; password): QUTguest_paper3 ; vs200_paper3
 
 <img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/c106927a-3323-4899-8abd-0c5655166976" width=80% height=80%>
 
 ## Workflow
 
-The main workflow combines the chemical images with optical microscopy images for enabling semantic segmentation using QuPath software. 
+The main workflow combines the chemical images with optical microscopy images for enabling pixel classification (semantic segmentation) using QuPath software [Bankhead et al., 2017](https://pubmed.ncbi.nlm.nih.gov/29203879/). 
   1. For registering the image montages we use the routine explained in this [video playlist](https://youtu.be/YpxTobsB-RM) (following [Bogovic et al., 2016](https://ieeexplore.ieee.org/document/7493463)).
   2. The pixel-based segmentation is converted into a MatLab array using our previous [work](https://github.com/marcoaaz/Acevedo-Kamber/tree/main/QuPath_generatingMaps).
 

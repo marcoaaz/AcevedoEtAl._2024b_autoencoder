@@ -57,7 +57,7 @@ The region of interest (ROI) tool shown in the figure above (panel E) is explain
 
 Interested readers can convert the Synchrotron XFM maps provided in the data repository (available at [Zenodo](https://zenodo.org/records/10669251)) to ppm using the expression 10,000*(image pixels)/(mean density (g/cm<sup>3</sup>) *thickness (µm)).
 
-## Update (21-Jun-2024)
+## Update (June 2024)
 
 In the paper we mentioned that the image analysis approach for tracking and segmentation were 'scalable'. Therefore, we have updated the original scripts to support working with whole-slide imaging using image pyramids (multi-gigapixel chemical image stacks). This was possible using the powerful [pyvips library](https://github.com/libvips/pyvips) and translating the code from MatLab to Python. The results should be stored in a folder output that looks like this:
 
@@ -81,13 +81,11 @@ With the update, there is no limit to how big the input images (geochemical maps
 
 If there is any missing function dependency that I have not uploaded, please, let me know. For smooth dependencies installation, I recommend using Visual Studio Code (and 'pip') rather than Anaconda-Spyder (and 'conda install') as an IDE.
 
-## Future Updates
+## Update (November 2025)
 
-File management is done manually and the scripts do not have a Graphical User Interface. We expect interested users to fork our code into other software that is already adapted to perform petrological analysis (e.g., [XMapTools](https://github.com/xmaptools)). Also, we expect to increase the support for more file formats from different micro-analytical instruments.
+This repository has spin off a new graphical user interface called [Chemistry Simplifier](https://github.com/marcoaaz/chemistry_simplifier/tree/main). You are welcome to use it for free.
 
-Particularly after the last update, I expect to continue making improvements in performance and parallelising the approach. 
+Thanks. 
 
-Please, feel free to contact us if there still are issues after running the code with your own data and getting familiar with the workflow. 
-
-Thanks. Cordially,
-Marco AAZ.
+Cordially,
+Marco Acevedo

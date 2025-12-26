@@ -1,21 +1,22 @@
 # AcevedoEtAl._2024b_autoencoder
 
-This repository contains original image analysis scripts presented in [Acevedo Zamora et al. (2024)](https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997) to study optical microscopy and micro-analytical maps of rock thin-sections (see Zenodo [repository](https://zenodo.org/records/10669251)). For example, on this oceanic gabbro (Figure 9):
+This repository contains original image analysis scripts presented in [Acevedo Zamora et al. (2024)](https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997) to study optical microscopy and micro-analytical maps of rock thin-sections (see Zenodo [repository](https://zenodo.org/records/10669251)). The scripts are commented and a broad explanation of the workflow steps (see below) can be found in Supplementary Material 1:
 
-<img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/a116201f-b2eb-44d9-a826-236ead59b04e" width=100% height=100%>
+This an example of an oceanic gabbro (Figure 9):
 
-
-The scripts are commented and a broad explanation of the workflow steps (see below) can be found in Supplementary Material 1:
-
-**Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. T. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. ***Chemical Geology***, 121997. https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997** 
-
-For the original dataset (for trialling the code), please, cite:
-
-**Acevedo Zamora, M. A. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections: original datasets. In Chemical Geology (version 1). ***Zenodo***. https://doi.org/10.5281/zenodo.10669251**
+<p align="center">
+  <img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/a116201f-b2eb-44d9-a826-236ead59b04e" width=80% height=80%>
+</p>
 
 The optical scans stacked with chemical element maps are in the [virtual microscope](https://qutrocks.qut.edu.au/) and can be accessed using (user ; password): QUTguest_paper3 ; vs200_paper3
 
-<img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/c106927a-3323-4899-8abd-0c5655166976" width=80% height=80%>
+<p align="center">
+  <img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/c106927a-3323-4899-8abd-0c5655166976" width=80% height=80%>
+</p>
+
+
+If you come from reading the paper, you might be interested in obtaining quantitative pixels for the chemical maps. You can convert the Synchrotron XFM maps provided in the data repository (available at [Zenodo](https://zenodo.org/records/10669251)) to ppm using the expression 10,000*(image pixels)/(mean density (g/cm<sup>3</sup>) *thickness (µm)).
+
 
 ## Workflow
 
@@ -23,7 +24,13 @@ The main workflow combines the chemical images with optical microscopy images fo
   1. For registering the image montages we use the routine explained in this [video playlist](https://youtu.be/YpxTobsB-RM) (following [Bogovic et al., 2016](https://ieeexplore.ieee.org/document/7493463)).
   2. The pixel-based segmentation is converted into a MatLab array using our previous [work](https://github.com/marcoaaz/Acevedo-Kamber/tree/main/QuPath_generatingMaps).
 
-<img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/595b94b7-9cf7-45ef-b63c-715586068d63" width=60% height=60%>
+<p align="center">
+  <img src="https://github.com/marcoaaz/AcevedoEtAl._2024b_autoencoder/assets/61703106/595b94b7-9cf7-45ef-b63c-715586068d63" width=60% height=60%>
+</p>
+
+There also is a video explaining the MatLab ROI Tool (see paper): [video](https://youtu.be/poPmVhwMwbA).
+
+## Installation
 
 To be able to run the scripts, you require installing:
 
@@ -48,14 +55,6 @@ To be able to run the scripts, you require installing:
   + Wavelet Toolbox, Version 6.3
 
 Meanwhile, the Python script uses Python version 3.7.12. The autoencoder script used numpy 1.21.6, scipy 1.7.3, h5py 3.6.0, matplotlib 3.2.2, pytorch 1.12.1, pillow 9.0.1, and tqdm 4.64.1. An install of pyvips is required to enable whole-slide imaging.
-
-## Video explaining the MatLab ROI Tool
-
-The region of interest (ROI) tool shown in the figure above (panel E) is explained in this brief [video](https://youtu.be/poPmVhwMwbA).
-
-## Unit conversion
-
-Interested readers can convert the Synchrotron XFM maps provided in the data repository (available at [Zenodo](https://zenodo.org/records/10669251)) to ppm using the expression 10,000*(image pixels)/(mean density (g/cm<sup>3</sup>) *thickness (µm)).
 
 ## Update (June 2024)
 
@@ -85,7 +84,19 @@ If there is any missing function dependency that I have not uploaded, please, le
 
 This repository has spin off a new graphical user interface called [Chemistry Simplifier](https://github.com/marcoaaz/chemistry_simplifier/tree/main). You are welcome to use it for free.
 
+
+## Citations
+
+**Acevedo Zamora, M. A., Kamber, B. S., Jones, M. W. M., Schrank, C. E., Ryan, C. G., Howard, D. L., Paterson, D. J., Ubide, T., & Murphy, D. T. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections. ***Chemical Geology***, 121997. https://doi.org/https://doi.org/10.1016/j.chemgeo.2024.121997** 
+
+For the original dataset required for trialling the code, please, cite:
+
+**Acevedo Zamora, M. A. (2024). Tracking element-mineral associations with unsupervised learning and dimensionality reduction in chemical and optical image stacks of thin sections: original datasets. In Chemical Geology (version 1). ***Zenodo***. https://doi.org/10.5281/zenodo.10669251**
+
+
+
 Thanks. 
 
 Cordially,
+
 Marco Acevedo
